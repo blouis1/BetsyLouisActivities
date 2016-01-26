@@ -27,6 +27,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.betsy.betsylouisactivities.MainActivity" />
         </activity>
+        <activity
+            android:name=".DisplayBothActivity"
+            android:label="@string/title_activity_display_both"
+            android:parentActivityName=".DisplayMessageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.betsy.betsylouisactivities.DisplayMessageActivity" />
+        </activity>
     </application>
 
 </manifest>

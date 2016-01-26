@@ -10,32 +10,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.betsy.betsylouisactivities.DisplayMessageActivity"
-    tools:showIn="@layout/activity_display_message"
-    android:id="@+id/content">
+    tools:context="com.example.betsy.betsylouisactivities.DisplayBothActivity"
+    tools:showIn="@layout/activity_display_both">
 
     <TextView
-        android:id="@+id/textView_message"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/sent_message1"/>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/message1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/edit_message2"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_message2"/>
-
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_next"
-        android:onClick="nextMessage"/>
-    </LinearLayout>
+        android:text="@string/sent_message2"/>
+
+    <TextView
+        android:id="@+id/message2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

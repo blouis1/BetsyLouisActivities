@@ -6,4 +6,7 @@
     <string name="title_activity_display_message">My Message</string>
     <string name="edit_message2">Enter second message</string>
     <string name="button_next">Next</string>
+    <string name="title_activity_display_both">DisplayBothActivity</string>
+    <string name="sent_message1">First Message:</string>
+    <string name="sent_message2">Second Message:</string>
 </resources>
