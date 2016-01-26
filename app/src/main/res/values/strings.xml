@@ -9,4 +9,5 @@
     <string name="title_activity_display_both">DisplayBothActivity</string>
     <string name="sent_message1">First Message:</string>
     <string name="sent_message2">Second Message:</string>
+    <string name="sent_label">Sent Message:</string>
 </resources>

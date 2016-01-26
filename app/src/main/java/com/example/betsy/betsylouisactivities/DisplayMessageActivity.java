@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
+    public final static String FIRST_MESSAGE = "com.example.betsy.betsylouisactivities.FIRST_MESSAGE";
     public final static String NEW_MESSAGE = "com.example.betsy.betsylouisactivities.NEW_MESSAGE";
 
     @Override
@@ -30,7 +31,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
             }
         });
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
@@ -45,6 +48,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.edit_message2);
         String message = editText.getText().toString();
         intent.putExtra(NEW_MESSAGE, message);
+        TextView textView = (TextView) findViewById(R.id.textView_message);
+        message = textView.getText().toString();
+        intent.putExtra(FIRST_MESSAGE, message);
         startActivity(intent);
     }
 }
